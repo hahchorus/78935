@@ -1,4 +1,4 @@
-using System; 
+using System;
 using System.ServiceModel;
 
 namespace WSDL.mensajes
@@ -12,4 +12,3 @@ namespace WSDL.mensajes
         string Mostrar(int id);
     }
 }
-

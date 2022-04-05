@@ -7,7 +7,7 @@ namespace WSDL.operaciones
     {
         public string Saludar(string nombre)
         {
-            string msj = "Hola "+nombre+", te saluda Horus" ;
+            string msj = "Hola "+nombre;
             return msj;
         }
         public string Mostrar(int id)
