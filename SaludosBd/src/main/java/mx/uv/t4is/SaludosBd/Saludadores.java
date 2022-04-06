@@ -7,21 +7,13 @@ import javax.persistence.Id;
 
 //DTO
 @Entity
-public class Saludos {
+public class Saludadores {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     
     private String nombre;
     private int id;
-
-    public Saludos(){
-    }
-
-    public Saludos(int id, String nombre){
-        this.id=id;
-        this.nombre=nombre;
-    }
 
     public void setId(int id) {
         this.id = id;
@@ -39,12 +31,4 @@ public class Saludos {
         return id;
     }
 
-    @Override
-    public String toString() {
-        return "{" +
-            " id='" + getId() + "'"+
-            ", nombre='" + getNombre() + "'"+
-            "}";
-    }
-    
 }
